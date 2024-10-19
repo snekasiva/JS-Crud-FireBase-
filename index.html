@@ -9,6 +9,7 @@
 <body>
     <h3>Firebase</h3>
     <form action="#" id="frm">
+        <input type="hidden" id="id" >
         <div class="form-group">
             <label for="name">Name</label>
             <input id="name" type="text" placeholder="name">
@@ -21,30 +22,20 @@
             <label for="city">City</label>
             <input id="city" type="text" placeholder="city">
         </div>
-        <button class="btn" type="submit">save</button>
+        <button class="btn" id="btnsubmit" type="submit">save</button>
     </form>
     <table border="1">
-        <tr>
+        <thead>
             <th>S.no</th>
             <th>Name</th>
             <th>Age</th>
+            <th>City</th>
             <th>Edit</th>
             <th>Delete</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>sree</td>
-            <td>35</td>
-            <td><button>edit</button></td>
-            <td><button>Del</button></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>sree</td>
-            <td>35</td>
-            <td><button>edit</button></td>
-            <td><button>Del</button></td>
-        </tr>
+        </thead>
+        <tbody id="tblBody">
+       
+    </tbody>
     </table>
     <script src="js/script.js" type="module"></script>
 </body>
